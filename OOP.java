@@ -1,4 +1,4 @@
-// import vehicle.*;
+import vehicle.*;
 
 public class OOP {
     public static void main(String[] args) {
@@ -81,7 +81,8 @@ public class OOP {
 
         product3.print2();
 
-        Product product7 = new Product(1000000); //오토바이 7
+        Product product7 = new Product(1000000);   // 오토바이 7
     }
 
 }
+

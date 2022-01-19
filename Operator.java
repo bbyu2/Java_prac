@@ -1,6 +1,6 @@
 public class Operator {
-    public static void main(String[] args) {
-        //증감연산자
+    public static void main(String[] agrs) {
+        // 증감연산자
         int i = 5;
         System.out.println(i);
         i++;
@@ -12,10 +12,10 @@ public class Operator {
         i = i - 1;
         System.out.println(i); // 5
 
-        System.out.println(i++); // 5, 후위연산이라고 함
+        System.out.println(i++); // 5
         System.out.println(i); // 6
         System.out.println(++i); // 7
-        System.out.println(i); //7
+        System.out.println(i); // 7
 
         i = -10;
         System.out.println(i);
@@ -27,9 +27,9 @@ public class Operator {
         boolean power = false;
         System.out.println(power);
         power = !power;
-        System.out.println(power);
+        System.out.println(power); // true
         power = !power;
-        System.out.println(power);
-
+        System.out.println(power); // false
+        
     }
 }

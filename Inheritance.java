@@ -1,14 +1,12 @@
 public class Inheritance {
     public static void main(String[] args) {
-        Mother mother = new Mother();
+        // Mother mother = new Mother();
 
         Son son = new Son();
-        son.ptintMotherAge();
+        son.printMotherAge();
 
-        son.setBloodType("A");
-        System.out.println(son.getBloodType());
-
-
+        son.setBoodType("A");
+        System.out.println(son.getBoodType());
     }
 }
 
@@ -18,10 +16,9 @@ class Mother {
     String hometown = "경상도";
     boolean isMarried = true;
     String bloodType = "O";
-// String bloodType
 
     public Mother() {
-        System.out.println("welcome to super class.");
+        System.out.println("Welcome ot super class");
     }
 }
 
@@ -29,21 +26,22 @@ class Mother {
 class Son extends Mother {
     int sonAge = 23;
     String hometown = "서울";
+// String boodType; << 정말 선언하지 않았는데 변수가 존재하는지?
 
     public Son() {
         System.out.println("welcome to sub class");
     }
 
-    public void ptintMotherAge() {
-        System.out.println("Mother's Age : " + super.motherAge);
+    public void printMotherAge() {
+        System.out.println("Mother's Age : "
+         + super.motherAge);
     }
 
-    public String getBloodType(){
-        return super.bloodType;
+    public String getBoodType(){
+        return this.bloodType;
     }
 
-    
-    public void setBloodType(String bloodType){
+    public void setBoodType(String bloodType){
         this.bloodType = bloodType;
     }
 

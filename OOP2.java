@@ -2,35 +2,51 @@ public class OOP2 {
     public static void main(String[] args) {
         Product p1 = new Product(2000000);
         System.out.println("hello world!");
+        // X
+
+
+
     }
+   
 }
-    
+
+// X
 class Product {
-    String color;
+    String color = "red";
     boolean motor = false;
-    int width;
-    int height;
-    int depth;
-    int price;
+    int width = 123;
+    int height = 111;
+    int depth = 333;
+    int price = 3000000;
 
-    Product() {
-        System.out.println("This is construct fuc.");
+    Product(){
+        System.out.println("This is construct func.");
     }
 
-    Product(int price) {
-        // this(price, true, "red");
-        System.out.println("This is construct fuc.");
+    Product(int price){
+        this(price, true, "red");
+        System.out.println("This is construct func.");
         this.price = price;
-        System.out.println("price");
+        System.out.println(price);
     }
 
-    Product(int price, boolean motor) {
-        System.out.println("This is construct fuc.");
+    Product(int price, boolean motor){
+        System.out.println("This is construct func.");
+        this.price = price;
+        this.motor = motor;
+        System.out.println(price);
+        System.out.println(motor);
+    }
+
+    Product(int price, boolean motor, String color){
+        System.out.println("This is construct func.");
         this.price = price;
         this.motor = motor;
         this.color = color;
-        System.out.println("This motocycle's price is " + this.price + "won.");
-    }
+        System.out.println(price);
+        System.out.println(motor);
+        System.out.println(color);
+      }
 
     void motorOn () {
         this.motor = true;
@@ -70,7 +86,7 @@ class Product {
     }
 
     String print(String a, int b) {
-        return a + "되는가?";
+        return a + "";
     }
 
     String print(int a, String name, int price, boolean isExists) {

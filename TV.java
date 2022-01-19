@@ -1,5 +1,5 @@
 public class TV {
-    String color;
+    // String color;
     boolean power;
     int channel;
 
